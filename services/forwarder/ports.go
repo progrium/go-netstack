@@ -15,7 +15,6 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/containers/gvisor-tap-vsock/pkg/sshclient"
 	"github.com/inetaf/tcpproxy"
 	"github.com/progrium/go-netstack/types"
 	log "github.com/sirupsen/logrus"
@@ -90,53 +89,53 @@ func (f *PortsForwarder) Expose(protocol types.TransportProtocol, local, remote 
 
 		// dialFn is set based on the protocol provided by remoteURI.Scheme
 		switch remoteURI.Scheme {
-		case "ssh-tunnel": // unix-to-unix proxy (over SSH)
-			// query string to map for the remoteURI contains ssh config info
-			remoteQuery := remoteURI.Query()
+		// case "ssh-tunnel": // unix-to-unix proxy (over SSH)
+		// 	// query string to map for the remoteURI contains ssh config info
+		// 	remoteQuery := remoteURI.Query()
 
-			// key
-			sshkeypath := firstValueOrEmpty(remoteQuery["key"])
-			if sshkeypath == "" {
-				return fmt.Errorf("key not provided for unix-ssh connection")
-			}
+		// 	// key
+		// 	sshkeypath := firstValueOrEmpty(remoteQuery["key"])
+		// 	if sshkeypath == "" {
+		// 		return fmt.Errorf("key not provided for unix-ssh connection")
+		// 	}
 
-			// passphrase
-			passphrase := firstValueOrEmpty(remoteQuery["passphrase"])
+		// 	// passphrase
+		// 	passphrase := firstValueOrEmpty(remoteQuery["passphrase"])
 
-			// default ssh port if not set
-			if remoteURI.Port() == "" {
-				remoteURI.Host = fmt.Sprintf("%s:%s", remoteURI.Hostname(), "22")
-			}
+		// 	// default ssh port if not set
+		// 	if remoteURI.Port() == "" {
+		// 		remoteURI.Host = fmt.Sprintf("%s:%s", remoteURI.Hostname(), "22")
+		// 	}
 
-			// check the remoteURI path provided for nonsense
-			if remoteURI.Path == "" || remoteURI.Path == "/" {
-				return fmt.Errorf("remote uri must contain a path to a socket file")
-			}
+		// 	// check the remoteURI path provided for nonsense
+		// 	if remoteURI.Path == "" || remoteURI.Path == "/" {
+		// 		return fmt.Errorf("remote uri must contain a path to a socket file")
+		// 	}
 
-			// captured and used by dialFn
-			var sshForward *sshclient.SSHForward
-			var connLock sync.Mutex
+		// 	// captured and used by dialFn
+		// 	var sshForward *sshclient.SSHForward
+		// 	var connLock sync.Mutex
 
-			dialFn = func(ctx context.Context, _, _ string) (net.Conn, error) {
-				connLock.Lock()
-				defer connLock.Unlock()
+		// 	dialFn = func(ctx context.Context, _, _ string) (net.Conn, error) {
+		// 		connLock.Lock()
+		// 		defer connLock.Unlock()
 
-				if sshForward == nil {
-					client, err := sshclient.CreateSSHForwardPassphrase(ctx, &url.URL{}, remoteURI, sshkeypath, passphrase, &gonetDialer{f.stack})
-					if err != nil {
-						return nil, err
-					}
-					sshForward = client
-				}
+		// 		if sshForward == nil {
+		// 			client, err := sshclient.CreateSSHForwardPassphrase(ctx, &url.URL{}, remoteURI, sshkeypath, passphrase, &gonetDialer{f.stack})
+		// 			if err != nil {
+		// 				return nil, err
+		// 			}
+		// 			sshForward = client
+		// 		}
 
-				return sshForward.Tunnel(ctx)
-			}
+		// 		return sshForward.Tunnel(ctx)
+		// 	}
 
-			cleanup = func() {
-				if sshForward != nil {
-					sshForward.Close()
-				}
-			}
+		// 	cleanup = func() {
+		// 		if sshForward != nil {
+		// 			sshForward.Close()
+		// 		}
+		// 	}
 
 		case "tcp": // unix-to-tcp proxy
 			// build address
@@ -164,14 +163,14 @@ func (f *PortsForwarder) Expose(protocol types.TransportProtocol, local, remote 
 				}
 				return net.Listen("unix", socketPath) // override tcp to use unix socket
 			}
-		case types.NPIPE:
-			p.ListenFunc = func(_, socketPath string) (net.Listener, error) {
-				npipeURI, err := url.Parse(socketPath)
-				if err != nil {
-					return nil, err
-				}
-				return sshclient.ListenNpipe(npipeURI)
-			}
+			// case types.NPIPE:
+			// 	p.ListenFunc = func(_, socketPath string) (net.Listener, error) {
+			// 		npipeURI, err := url.Parse(socketPath)
+			// 		if err != nil {
+			// 			return nil, err
+			// 		}
+			// 		return sshclient.ListenNpipe(npipeURI)
+			// 	}
 		}
 		p.AddRoute(local, &tcpproxy.DialProxy{
 			Addr:        remoteAddr,
