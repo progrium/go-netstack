@@ -8,7 +8,7 @@ import (
 
 	"github.com/progrium/go-netstack/services/dhcp"
 	"github.com/progrium/go-netstack/services/dns"
-	"github.com/progrium/go-netstack/forwarder"
+	"github.com/progrium/go-netstack/services/forwarder"
 	"github.com/progrium/go-netstack/tap"
 	"github.com/progrium/go-netstack/types"
 	log "github.com/sirupsen/logrus"
