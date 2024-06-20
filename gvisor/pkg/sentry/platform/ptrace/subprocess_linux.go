@@ -20,13 +20,13 @@ package ptrace
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/bpf"
+	"github.com/progrium/go-netstack/gvisor/pkg/hosttid"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/hosttid"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
 )
 
 const syscallEvent unix.Signal = 0x80

@@ -18,13 +18,13 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/syserr"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal"
+	"github.com/progrium/go-netstack/gvisor/pkg/syserr"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
 )
 
 // ErrorTargetName is used to mark targets as error targets. Error targets

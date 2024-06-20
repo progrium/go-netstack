@@ -15,7 +15,7 @@
 package arch
 
 import (
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
 )
 
 // An AuxEntry represents an entry in an ELF auxiliary vector.

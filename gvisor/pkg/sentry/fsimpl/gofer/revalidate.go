@@ -15,9 +15,9 @@
 package gofer
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 type errPartialRevalidation struct{}

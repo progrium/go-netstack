@@ -15,7 +15,7 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 )
 
 // SignalHandlers holds information about signal actions.

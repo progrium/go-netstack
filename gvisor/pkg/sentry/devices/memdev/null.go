@@ -17,9 +17,9 @@ package memdev
 import (
 	"io"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/usermem"
 )
 
 const nullDevMinor = 3

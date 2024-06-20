@@ -17,12 +17,12 @@ package netfilter
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/syserr"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	"github.com/progrium/go-netstack/gvisor/pkg/syserr"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
 )
 
 // emptyIPv6Filter is for comparison with a rule's filters to determine whether

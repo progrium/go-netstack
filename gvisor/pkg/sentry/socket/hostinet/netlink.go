@@ -19,15 +19,15 @@ import (
 	"fmt"
 	"syscall"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/binary"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal/primitive"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/inet"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/binary"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/sentry/inet"
-	"gvisor.dev/gvisor/pkg/tcpip"
 )
 
 func getInterfaces() (map[int32]inet.Interface, error) {

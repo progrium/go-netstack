@@ -18,16 +18,16 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi"
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/bits"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/metric"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/seccheck"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"google.golang.org/protobuf/proto"
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/bits"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/metric"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 const (

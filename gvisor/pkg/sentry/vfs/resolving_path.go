@@ -17,12 +17,12 @@ package vfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/fspath"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/fspath"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // ResolvingPath represents the state of an in-progress path resolution, shared

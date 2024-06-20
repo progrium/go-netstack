@@ -21,11 +21,11 @@ import (
 	"io"
 	"strconv"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/gohacks"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/safemem"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/gohacks"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/safemem"
 )
 
 // IO provides access to the contents of a virtual memory space.

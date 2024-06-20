@@ -53,7 +53,7 @@ import (
 	"reflect"
 	"runtime"
 
-	"gvisor.dev/gvisor/pkg/state/wire"
+	"github.com/progrium/go-netstack/gvisor/pkg/state/wire"
 )
 
 // objectID is a unique identifier assigned to each object to be serialized.

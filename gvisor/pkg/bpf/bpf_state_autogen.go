@@ -3,8 +3,8 @@
 package bpf
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/state"
 )
 
 func (ins *Instruction) StateTypeName() string {

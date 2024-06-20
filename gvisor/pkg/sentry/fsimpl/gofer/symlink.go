@@ -15,9 +15,9 @@
 package gofer
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
 )
 
 func (d *dentry) isSymlink() bool {

@@ -19,13 +19,13 @@ import (
 	"fmt"
 	"os"
 
+	pkgcontext "github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0"
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0/pagetables"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"golang.org/x/sys/unix"
-	pkgcontext "gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/ring0"
-	"gvisor.dev/gvisor/pkg/ring0/pagetables"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 // userMemoryRegion is a region of physical memory.

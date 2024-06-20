@@ -20,7 +20,7 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/gohacks"
+	"github.com/progrium/go-netstack/gvisor/pkg/gohacks"
 )
 
 // Gate is a synchronization primitive that allows concurrent goroutines to

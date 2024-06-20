@@ -5,13 +5,13 @@ import (
 	"net"
 	"sync"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/adapters/gonet"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/udp"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 	log "github.com/sirupsen/logrus"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
-	"gvisor.dev/gvisor/pkg/waiter"
 )
 
 func UDP(s *stack.Stack, nat map[tcpip.Address]tcpip.Address, natLock *sync.Mutex) *udp.Forwarder {

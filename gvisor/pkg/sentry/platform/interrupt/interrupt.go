@@ -18,7 +18,7 @@ package interrupt
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // Receiver receives interrupt notifications from a Forwarder.

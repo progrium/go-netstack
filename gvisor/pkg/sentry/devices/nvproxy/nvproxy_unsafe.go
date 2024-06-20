@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/nvgpu"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
 )
 
 func hostDriverVersion() (string, error) {

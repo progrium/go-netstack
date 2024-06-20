@@ -15,12 +15,12 @@
 package gofer
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/lisafs"
+	"github.com/progrium/go-netstack/gvisor/pkg/safemem"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/hostfd"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/lisafs"
-	"gvisor.dev/gvisor/pkg/safemem"
-	"gvisor.dev/gvisor/pkg/sentry/hostfd"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 var noHandle = handle{

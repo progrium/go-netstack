@@ -24,13 +24,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventchannel"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/metric/metric_go_proto"
+	"github.com/progrium/go-netstack/gvisor/pkg/prometheus"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"google.golang.org/protobuf/types/known/timestamppb"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/eventchannel"
-	"gvisor.dev/gvisor/pkg/log"
-	pb "gvisor.dev/gvisor/pkg/metric/metric_go_proto"
-	"gvisor.dev/gvisor/pkg/prometheus"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 var (

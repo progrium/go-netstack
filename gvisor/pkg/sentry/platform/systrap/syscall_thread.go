@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"sync/atomic"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/pgalloc"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/usage"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
 )
 
 // The syscall message consists of sentry and stub messages.

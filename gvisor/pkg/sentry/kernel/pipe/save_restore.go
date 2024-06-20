@@ -15,7 +15,7 @@
 package pipe
 
 import (
-	"gvisor.dev/gvisor/pkg/safemem"
+	"github.com/progrium/go-netstack/gvisor/pkg/safemem"
 )
 
 // afterLoad is called by stateify.

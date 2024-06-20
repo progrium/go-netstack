@@ -15,10 +15,10 @@
 package vfs
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/refs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
 )
 
 // A MountNamespace is a collection of Mounts.//

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/eventfd"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/eventfd"
 )
 
 const (

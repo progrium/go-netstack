@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/unet"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/unet"
 )
 
 var (

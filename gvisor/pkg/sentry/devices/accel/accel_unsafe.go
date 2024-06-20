@@ -17,9 +17,9 @@ package accel
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/gasket"
 	"golang.org/x/exp/constraints"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/gasket"
 )
 
 func ioctlInvokePtrArg[Params any](hostFd int32, cmd gasket.Ioctl, params *Params) (uintptr, error) {

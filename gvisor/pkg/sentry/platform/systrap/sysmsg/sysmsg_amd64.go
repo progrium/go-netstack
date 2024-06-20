@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/cpuid"
+	"github.com/progrium/go-netstack/gvisor/pkg/cpuid"
 )
 
 // SighandlerBlob contains the compiled code of the sysmsg signal handler.

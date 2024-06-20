@@ -17,14 +17,14 @@ package kernfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/usermem"
 )
 
 // SeekEndConfig describes the SEEK_END behaviour for FDs.

@@ -22,12 +22,12 @@ import (
 	"path"
 	"strings"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/fd"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/errors"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/log"
 )
 
 // ExtractErrno extracts a unix.Errno from a error, best effort.

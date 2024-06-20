@@ -18,20 +18,20 @@ package accel
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/gasket"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/fdnotifier"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/mm"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/usermem"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/gasket"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/fdnotifier"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/mm"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/usermem"
-	"gvisor.dev/gvisor/pkg/waiter"
 )
 
 // accelFD implements vfs.FileDescriptionImpl for /dev/accel[0-9]+.

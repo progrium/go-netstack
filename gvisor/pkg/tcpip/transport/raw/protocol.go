@@ -15,11 +15,11 @@
 package raw
 
 import (
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/internal/noop"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/packet"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/internal/noop"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/packet"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 )
 
 // EndpointFactory implements stack.RawFactory.

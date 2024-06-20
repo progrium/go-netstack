@@ -17,9 +17,9 @@
 package packetsocket
 
 import (
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/link/nested"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/link/nested"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
 )
 
 var _ stack.NetworkDispatcher = (*endpoint)(nil)

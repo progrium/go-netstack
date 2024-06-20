@@ -24,9 +24,9 @@ package fdnotifier
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/waiter"
 )
 
 type fdInfo struct {

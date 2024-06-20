@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"io"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // ReadSize is the default amount that a View's size is increased by when an

@@ -15,8 +15,8 @@
 package stack
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 	"golang.org/x/time/rate"
-	"gvisor.dev/gvisor/pkg/tcpip"
 )
 
 const (

@@ -20,9 +20,9 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/gohacks"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/gohacks"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // mountKey represents the location at which a Mount is mounted. It is

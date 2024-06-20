@@ -15,7 +15,7 @@
 package tcp
 
 import (
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // segmentQueue is a bounded, thread-safe queue of TCP segments.

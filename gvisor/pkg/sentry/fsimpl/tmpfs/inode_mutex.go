@@ -3,8 +3,8 @@ package tmpfs
 import (
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/sync/locking"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync/locking"
 )
 
 // Mutex is sync.Mutex with the correctness validator.

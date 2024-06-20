@@ -17,14 +17,14 @@ package systrap
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/bpf"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform/systrap/sysmsg"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
 )
 
 // sysmsgThread describes a sysmsg stub thread which isn't traced

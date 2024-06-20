@@ -18,7 +18,7 @@
 package ring0
 
 import (
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 )
 
 // This is an assembly function.

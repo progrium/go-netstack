@@ -17,5 +17,5 @@ package ring0
 
 import (
 	// Required for facts checks.
-	_ "gvisor.dev/gvisor/pkg/abi/linux"
+	_ "github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 )

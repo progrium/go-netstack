@@ -1,8 +1,8 @@
 package erofs
 
 import (
-	"gvisor.dev/gvisor/pkg/fspath"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/fspath"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
 )
 
 // We need to define an interface instead of using atomic.Pointer because

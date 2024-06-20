@@ -17,14 +17,14 @@ package linux
 import (
 	"bytes"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/tmpfs"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/mm"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/fsimpl/tmpfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/mm"
 )
 
 // Brk implements linux syscall brk(2).

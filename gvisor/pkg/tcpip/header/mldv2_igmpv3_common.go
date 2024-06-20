@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 func mldv2AndIGMPv3QuerierQueryCodeToInterval(code uint8) time.Duration {

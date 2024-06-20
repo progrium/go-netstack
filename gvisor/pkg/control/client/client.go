@@ -16,8 +16,8 @@
 package client
 
 import (
-	"gvisor.dev/gvisor/pkg/unet"
-	"gvisor.dev/gvisor/pkg/urpc"
+	"github.com/progrium/go-netstack/gvisor/pkg/unet"
+	"github.com/progrium/go-netstack/gvisor/pkg/urpc"
 )
 
 // ConnectTo attempts to connect to the sandbox with the given address.

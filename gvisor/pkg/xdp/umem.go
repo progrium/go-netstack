@@ -20,8 +20,8 @@ package xdp
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 // TODO(b/240191988): There's some kind of memory corruption bug that occurs

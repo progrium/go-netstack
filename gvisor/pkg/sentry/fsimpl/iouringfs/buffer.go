@@ -17,7 +17,7 @@ package iouringfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/safemem"
+	"github.com/progrium/go-netstack/gvisor/pkg/safemem"
 )
 
 // sharedBuffer represents a memory buffer shared between the sentry and

@@ -3,7 +3,7 @@
 package sys
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/state"
 )
 
 func (r *dirRefs) StateTypeName() string {

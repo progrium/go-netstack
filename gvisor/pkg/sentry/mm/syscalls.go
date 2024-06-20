@@ -18,14 +18,14 @@ import (
 	"fmt"
 	mrand "math/rand"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/futex"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/futex"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/limits"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
 )
 
 // HandleUserFault handles an application page fault. sp is the faulting

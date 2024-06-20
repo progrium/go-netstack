@@ -17,14 +17,14 @@ package kernel
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux/errno"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/futex"
-	"gvisor.dev/gvisor/pkg/sentry/loader"
-	"gvisor.dev/gvisor/pkg/sentry/mm"
-	"gvisor.dev/gvisor/pkg/syserr"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux/errno"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/futex"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/loader"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/mm"
+	"github.com/progrium/go-netstack/gvisor/pkg/syserr"
 )
 
 var errNoSyscalls = syserr.New("no syscall table found", errno.ENOEXEC)

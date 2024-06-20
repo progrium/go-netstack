@@ -15,8 +15,8 @@
 package strace
 
 import (
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 )
 
 // CapabilityBitset is the set of capabilities in a bitset.

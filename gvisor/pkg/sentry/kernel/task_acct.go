@@ -17,11 +17,11 @@ package kernel
 // Accounting, limits, timers.
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	ktime "github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/time"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/limits"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/usage"
 )
 
 // Getitimer implements getitimer(2).

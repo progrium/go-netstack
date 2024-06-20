@@ -18,9 +18,9 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
 )
 
 // This takes both input and output as pointer arguments to avoid copying large

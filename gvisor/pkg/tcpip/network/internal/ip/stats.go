@@ -14,7 +14,7 @@
 
 package ip
 
-import "gvisor.dev/gvisor/pkg/tcpip"
+import "github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 
 // LINT.IfChange(MultiCounterIPForwardingStats)
 

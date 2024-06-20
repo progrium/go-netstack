@@ -6,18 +6,18 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/adapters/gonet"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/network/ipv4"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/tcp"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/udp"
 	"github.com/progrium/go-netstack/services/dhcp"
 	"github.com/progrium/go-netstack/services/dns"
 	"github.com/progrium/go-netstack/services/forwarder"
 	"github.com/progrium/go-netstack/tap"
 	"github.com/progrium/go-netstack/types"
 	log "github.com/sirupsen/logrus"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
-	"gvisor.dev/gvisor/pkg/tcpip/network/ipv4"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/tcp"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
 )
 
 func addServices(configuration *types.Configuration, s *stack.Stack, ipPool *tap.IPPool) (http.Handler, error) {

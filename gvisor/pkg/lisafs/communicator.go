@@ -17,8 +17,8 @@ package lisafs
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
 )
 
 // Communicator is a server side utility which represents exactly how the

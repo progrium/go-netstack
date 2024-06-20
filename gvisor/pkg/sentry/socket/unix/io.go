@@ -15,9 +15,9 @@
 package unix
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/safemem"
-	"gvisor.dev/gvisor/pkg/sentry/socket/unix/transport"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/safemem"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/socket/unix/transport"
 )
 
 // EndpointWriter implements safemem.Writer that writes to a transport.Endpoint.

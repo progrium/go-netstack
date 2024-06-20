@@ -21,9 +21,9 @@ import (
 	"encoding/binary"
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/cpuid"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/cpuid"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 )
 
 // HaltAndWriteFSBase halts execution. On resume, it sets FS_BASE from the

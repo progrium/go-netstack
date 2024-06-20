@@ -17,8 +17,8 @@ package fsutil
 import (
 	"math"
 
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/usage"
 )
 
 // FrameRefSegInfo holds reference count and memory cgroup id of the segment.

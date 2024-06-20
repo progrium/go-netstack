@@ -17,8 +17,8 @@ package arch
 import (
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal/primitive"
 )
 
 // pushAddrSliceAndTerminator copies a slices of addresses to the stack, and

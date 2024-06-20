@@ -14,7 +14,7 @@
 
 package tcp
 
-import "gvisor.dev/gvisor/pkg/tcpip/seqnum"
+import "github.com/progrium/go-netstack/gvisor/pkg/tcpip/seqnum"
 
 // sackRecovery stores the variables related to TCP SACK loss recovery
 // algorithm.

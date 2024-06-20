@@ -15,9 +15,9 @@
 package transport
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/syserr"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/syserr"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 )
 
 // queue is a buffer queue.

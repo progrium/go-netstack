@@ -21,8 +21,8 @@ package ptrace
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
 )
 
 // unmaskAllSignals unmasks all signals on the current thread.

@@ -15,8 +15,8 @@
 package strace
 
 import (
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 )
 
 // CloseRangeFlagSet is the set of close_range(2) flags.

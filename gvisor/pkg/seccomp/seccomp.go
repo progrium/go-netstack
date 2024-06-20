@@ -21,9 +21,9 @@ import (
 	"sort"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/bpf"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 )
 
 const (

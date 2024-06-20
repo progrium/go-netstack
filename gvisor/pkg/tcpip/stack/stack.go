@@ -27,15 +27,15 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/buffer"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	cryptorand "github.com/progrium/go-netstack/gvisor/pkg/rand"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/ports"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 	"golang.org/x/time/rate"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/log"
-	cryptorand "gvisor.dev/gvisor/pkg/rand"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/ports"
-	"gvisor.dev/gvisor/pkg/waiter"
 )
 
 const (

@@ -21,11 +21,11 @@ import (
 	"encoding/binary"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal/primitive"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/progrium/go-netstack/gvisor/pkg/usermem"
 )
 
 // addTrapLocked constructs a trampoline for a specified syscall.

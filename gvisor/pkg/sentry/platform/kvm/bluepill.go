@@ -17,10 +17,10 @@ package kvm
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sighandling"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/ring0"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sighandling"
 )
 
 // bluepill enters guest mode.

@@ -20,8 +20,8 @@ package ptrace
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
 )
 
 // getTLS gets the thread local storage register.

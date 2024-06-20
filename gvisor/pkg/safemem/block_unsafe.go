@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/gohacks"
-	"gvisor.dev/gvisor/pkg/safecopy"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/gohacks"
+	"github.com/progrium/go-netstack/gvisor/pkg/safecopy"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // A Block is a range of contiguous bytes, similar to []byte but with the

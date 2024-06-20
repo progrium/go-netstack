@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/nvgpu"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // DriverVersion represents a NVIDIA driver version patch release.

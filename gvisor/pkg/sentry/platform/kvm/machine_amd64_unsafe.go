@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
 )
 
 // loadSegments copies the current segments.

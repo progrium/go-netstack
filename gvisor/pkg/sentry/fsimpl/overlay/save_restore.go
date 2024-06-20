@@ -15,7 +15,7 @@
 package overlay
 
 import (
-	"gvisor.dev/gvisor/pkg/refs"
+	"github.com/progrium/go-netstack/gvisor/pkg/refs"
 )
 
 func (d *dentry) afterLoad() {

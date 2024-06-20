@@ -20,7 +20,7 @@ package bpf
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 )
 
 const (

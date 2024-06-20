@@ -15,7 +15,7 @@
 package stack
 
 import (
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 type sharedStats struct {

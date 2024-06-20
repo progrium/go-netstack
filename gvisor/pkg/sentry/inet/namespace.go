@@ -15,9 +15,9 @@
 package inet
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/nsfs"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/fsimpl/nsfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
 )
 
 // Namespace represents a network namespace. See network_namespaces(7).

@@ -17,8 +17,8 @@
 package null
 
 import (
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
+	"github.com/progrium/go-netstack/gvisor/pkg/fd"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/seccheck"
 )
 
 const name = "null"

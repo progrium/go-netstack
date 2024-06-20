@@ -19,13 +19,13 @@ import (
 	"fmt"
 	"math/rand"
 
-	"gvisor.dev/gvisor/pkg/sleep"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/hash/jenkins"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/progrium/go-netstack/gvisor/pkg/sleep"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/hash/jenkins"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 )
 
 // epQueue is a queue of endpoints.

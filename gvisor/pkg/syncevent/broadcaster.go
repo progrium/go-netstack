@@ -15,7 +15,7 @@
 package syncevent
 
 import (
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // Broadcaster is an implementation of Source that supports any number of

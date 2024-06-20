@@ -20,11 +20,11 @@ import (
 	"os"
 	"runtime"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/fsmetric"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/usage"
+	"github.com/progrium/go-netstack/gvisor/pkg/urpc"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sentry/fsmetric"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
-	"gvisor.dev/gvisor/pkg/urpc"
 )
 
 // Usage includes usage-related RPC stubs.

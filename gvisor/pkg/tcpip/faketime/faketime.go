@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 // NullClock implements a clock that never advances.

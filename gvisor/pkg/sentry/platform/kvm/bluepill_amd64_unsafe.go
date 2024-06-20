@@ -20,9 +20,9 @@ package kvm
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/ring0"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
 )
 
 // dieArchSetup initializes the state for dieTrampoline.

@@ -18,8 +18,8 @@ import (
 	"errors"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/eventchannel"
-	"gvisor.dev/gvisor/pkg/urpc"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventchannel"
+	"github.com/progrium/go-netstack/gvisor/pkg/urpc"
 )
 
 // EventsOpts are the arguments for eventchannel-related commands.

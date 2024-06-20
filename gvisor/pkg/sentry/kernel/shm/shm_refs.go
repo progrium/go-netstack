@@ -3,8 +3,8 @@ package shm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/refs"
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/refs"
 )
 
 // enableLogging indicates whether reference-related events should be logged (with

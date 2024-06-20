@@ -15,11 +15,11 @@
 package lisafs
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/refs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 // FDID (file descriptor identifier) is used to identify FDs on a connection.

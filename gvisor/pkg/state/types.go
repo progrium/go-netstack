@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"sort"
 
-	"gvisor.dev/gvisor/pkg/state/wire"
+	"github.com/progrium/go-netstack/gvisor/pkg/state/wire"
 )
 
 // assertValidType asserts that the type is valid.

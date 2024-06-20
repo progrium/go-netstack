@@ -17,11 +17,11 @@ package fsutil
 import (
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/safemem"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/safemem"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
 )
 
 // HostFileMapper caches mappings of an arbitrary host file descriptor. It is

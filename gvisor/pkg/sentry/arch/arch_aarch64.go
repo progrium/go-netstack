@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"io"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/cpuid"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/arch/fpu"
-	rpb "gvisor.dev/gvisor/pkg/sentry/arch/registers_go_proto"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/cpuid"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch/fpu"
+	rpb "github.com/progrium/go-netstack/gvisor/pkg/sentry/arch/registers_go_proto"
 )
 
 // Registers represents the CPU registers for this architecture.

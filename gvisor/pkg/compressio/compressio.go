@@ -55,7 +55,7 @@ import (
 	"io"
 	"runtime"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 var bufPool = sync.Pool{

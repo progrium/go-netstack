@@ -7,18 +7,18 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/progrium/go-netstack/dhcp/dhcpv4"
+	"github.com/progrium/go-netstack/dhcp/dhcpv4/server4"
+	"github.com/progrium/go-netstack/dhcp/rfc1035label"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/adapters/gonet"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/network/ipv4"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/udp"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 	"github.com/progrium/go-netstack/tap"
 	"github.com/progrium/go-netstack/types"
-	"github.com/insomniacslk/dhcp/dhcpv4"
-	"github.com/insomniacslk/dhcp/dhcpv4/server4"
-	"github.com/insomniacslk/dhcp/rfc1035label"
 	log "github.com/sirupsen/logrus"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
-	"gvisor.dev/gvisor/pkg/tcpip/network/ipv4"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
-	"gvisor.dev/gvisor/pkg/waiter"
 )
 
 const serverPort = 67

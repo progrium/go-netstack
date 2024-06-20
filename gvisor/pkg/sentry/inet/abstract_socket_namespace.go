@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/socket/unix/transport"
-	"gvisor.dev/gvisor/pkg/syserr"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/refs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/socket/unix/transport"
+	"github.com/progrium/go-netstack/gvisor/pkg/syserr"
 )
 
 // +stateify savable

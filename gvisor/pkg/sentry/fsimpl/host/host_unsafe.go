@@ -17,8 +17,8 @@ package host
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
 )
 
 func ioctlFionread(fd int) (uint32, error) {

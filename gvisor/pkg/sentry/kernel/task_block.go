@@ -19,10 +19,10 @@ import (
 	"runtime/trace"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	ktime "github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/time"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/waiter"
 )
 
 // BlockWithTimeout blocks t until an event is received from C, the application

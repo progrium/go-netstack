@@ -17,8 +17,8 @@ package kvm
 import (
 	"sync/atomic"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/hostarch"
 )
 
 const (

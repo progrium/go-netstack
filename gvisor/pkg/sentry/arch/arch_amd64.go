@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/rand"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal/primitive"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch/fpu"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/limits"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/sentry/arch/fpu"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
 )
 
 // Host specifies the host architecture.

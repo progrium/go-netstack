@@ -20,8 +20,8 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/bpf"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/bpf"
 )
 
 // The offsets are based on the following struct in include/linux/seccomp.h.

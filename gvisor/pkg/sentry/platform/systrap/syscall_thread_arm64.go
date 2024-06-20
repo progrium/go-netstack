@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
 )
 
 func (t *syscallThread) detach() {

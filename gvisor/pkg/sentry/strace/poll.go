@@ -18,12 +18,12 @@ import (
 	"fmt"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	slinux "gvisor.dev/gvisor/pkg/sentry/syscalls/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	slinux "github.com/progrium/go-netstack/gvisor/pkg/sentry/syscalls/linux"
 
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
 )
 
 // PollEventSet is the set of poll(2) event flags.

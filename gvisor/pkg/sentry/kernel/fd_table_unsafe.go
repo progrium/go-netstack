@@ -17,8 +17,8 @@ package kernel
 import (
 	"math"
 
-	"gvisor.dev/gvisor/pkg/bitmap"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/bitmap"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
 )
 
 type descriptorBucket [fdsPerBucket]descriptorAtomicPtr

@@ -21,8 +21,8 @@ import (
 	"os"
 	"path"
 
-	"gvisor.dev/gvisor/pkg/eventfd"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventfd"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 )
 
 // NotifyCurrentMemcgPressureCallback requests that f is called whenever the

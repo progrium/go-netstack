@@ -15,9 +15,9 @@
 package transport
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/hostfd"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/hostfd"
 )
 
 // copyToMulti copies as many bytes from src to dst as possible.

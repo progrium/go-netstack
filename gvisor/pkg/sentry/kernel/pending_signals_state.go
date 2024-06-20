@@ -14,7 +14,7 @@
 
 package kernel
 
-import "gvisor.dev/gvisor/pkg/abi/linux"
+import "github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 
 // +stateify savable
 type savedPendingSignal struct {

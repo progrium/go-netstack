@@ -18,14 +18,14 @@
 package sharedmem
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/buffer"
+	"github.com/progrium/go-netstack/gvisor/pkg/cleanup"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventfd"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/link/sharedmem/pipe"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/link/sharedmem/queue"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/eventfd"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sharedmem/pipe"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sharedmem/queue"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
 )
 
 // serverTx represents the server end of the sharedmem queue and is used to send

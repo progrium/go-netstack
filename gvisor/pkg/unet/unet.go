@@ -21,10 +21,10 @@ package unet
 import (
 	"errors"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventfd"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/eventfd"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 // backlog is used for the listen request.

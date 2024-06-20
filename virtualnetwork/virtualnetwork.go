@@ -6,17 +6,17 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/pkg/errors"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/link/sniffer"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/network/arp"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/network/ipv4"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/icmp"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/tcp"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/transport/udp"
 	"github.com/progrium/go-netstack/tap"
 	"github.com/progrium/go-netstack/types"
-	"github.com/pkg/errors"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sniffer"
-	"gvisor.dev/gvisor/pkg/tcpip/network/arp"
-	"gvisor.dev/gvisor/pkg/tcpip/network/ipv4"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/icmp"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/tcp"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
 )
 
 type VirtualNetwork struct {

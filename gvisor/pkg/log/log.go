@@ -43,8 +43,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/linewriter"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/linewriter"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // Level is the log level.

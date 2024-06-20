@@ -15,9 +15,9 @@
 package ring0
 
 import (
-	"gvisor.dev/gvisor/pkg/ring0/pagetables"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/arch/fpu"
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0/pagetables"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch/fpu"
 )
 
 // Kernel is a global kernel object.

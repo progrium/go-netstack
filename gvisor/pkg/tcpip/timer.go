@@ -17,7 +17,7 @@ package tcpip
 import (
 	"time"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // jobInstance is a specific instance of Job.

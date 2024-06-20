@@ -17,11 +17,11 @@
 package seccheck
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"google.golang.org/protobuf/proto"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/context"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 // A Point represents a checkpoint, a point at which a security check occurs.

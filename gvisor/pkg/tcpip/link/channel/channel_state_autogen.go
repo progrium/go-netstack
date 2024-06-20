@@ -3,7 +3,7 @@
 package channel
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/state"
 )
 
 func (n *NotificationHandle) StateTypeName() string {

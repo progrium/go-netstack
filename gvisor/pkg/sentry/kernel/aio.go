@@ -15,7 +15,7 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
 )
 
 // AIOCallback is an function that does asynchronous I/O on behalf of a task.

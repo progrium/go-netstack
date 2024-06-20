@@ -20,7 +20,7 @@ package atomicbitops
 import (
 	"sync/atomic"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // Int64 is an atomic int64 that is guaranteed to be 64-bit

@@ -18,12 +18,12 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/flipcall"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/pool"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/unet"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/flipcall"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/pool"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/unet"
 )
 
 // ErrOutOfTags indicates no tags are available.

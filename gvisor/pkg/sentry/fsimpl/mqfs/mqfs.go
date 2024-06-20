@@ -19,12 +19,12 @@ package mqfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/kernfs"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/ipc"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/mq"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/fsimpl/kernfs"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/auth"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/ipc"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/mq"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/vfs"
 )
 
 const (

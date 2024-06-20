@@ -17,8 +17,8 @@ package buffer
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/bits"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/bits"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 const (

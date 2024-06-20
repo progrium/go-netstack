@@ -15,8 +15,8 @@
 package vfs
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/socket/unix/transport"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/socket/unix/transport"
 )
 
 // GetDentryOptions contains options to VirtualFilesystem.GetDentryAt() and

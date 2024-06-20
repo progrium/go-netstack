@@ -44,10 +44,10 @@ import (
 	"fmt"
 	"math/bits"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/cleanup"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/memutil"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/memutil"
 )
 
 // A ControlBlock contains all the control structures necessary to use an

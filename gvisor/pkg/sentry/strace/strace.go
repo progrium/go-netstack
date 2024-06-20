@@ -22,18 +22,18 @@ import (
 	"strings"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/bits"
-	"gvisor.dev/gvisor/pkg/eventchannel"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	pb "gvisor.dev/gvisor/pkg/sentry/strace/strace_go_proto"
-	slinux "gvisor.dev/gvisor/pkg/sentry/syscalls/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/bits"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventchannel"
+	"github.com/progrium/go-netstack/gvisor/pkg/marshal/primitive"
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/sentry/strace/strace_go_proto"
+	slinux "github.com/progrium/go-netstack/gvisor/pkg/sentry/syscalls/linux"
 
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
 )
 
 // DefaultLogMaximumSize is the default LogMaximumSize.

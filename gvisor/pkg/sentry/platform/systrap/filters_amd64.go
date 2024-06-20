@@ -18,7 +18,7 @@
 package systrap
 
 import (
-	"gvisor.dev/gvisor/pkg/seccomp"
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
 )
 
 // SyscallFilters returns syscalls made exclusively by the systrap platform.

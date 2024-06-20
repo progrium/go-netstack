@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"math"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 )
 
 type endpointControlImpl struct {

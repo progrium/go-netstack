@@ -23,7 +23,7 @@ import (
 	"math"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 // ndpOptionIdentifier is an NDP option type identifier.

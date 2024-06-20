@@ -18,8 +18,8 @@
 package strace
 
 import (
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 )
 
 // linuxARM64 provides a mapping of the Linux arm64 syscalls and their argument

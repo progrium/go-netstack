@@ -20,7 +20,7 @@ package pagetables
 import (
 	"sync/atomic"
 
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
 )
 
 // archPageTables is architecture-specific data.

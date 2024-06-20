@@ -17,12 +17,12 @@ package control
 import (
 	"errors"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/state"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/pkg/urpc"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/watchdog"
+	"github.com/progrium/go-netstack/gvisor/pkg/urpc"
 )
 
 // ErrInvalidFiles is returned when the urpc call to Save does not include an

@@ -3,7 +3,7 @@ package virtualnetwork
 import (
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 func iterateFields(ret map[string]interface{}, valueOf reflect.Value) {

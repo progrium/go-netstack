@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 )
 
 const (

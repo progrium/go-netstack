@@ -17,7 +17,7 @@ package auth
 import (
 	"math"
 
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
 )
 
 // A UserNamespace represents a user namespace. See user_namespaces(7) for

@@ -19,8 +19,8 @@ import (
 	"sync/atomic"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
 )
 
 func (t *syscallThread) initRequestReplyAddresses(sentryStackAddr uintptr) {

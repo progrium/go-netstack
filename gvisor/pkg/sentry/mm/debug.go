@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
 )
 
 const (

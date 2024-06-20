@@ -20,8 +20,8 @@ import (
 	"sort"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 )
 
 // EnterInitialCgroups moves t into an initial set of cgroups.

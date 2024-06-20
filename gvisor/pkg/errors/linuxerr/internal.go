@@ -15,8 +15,8 @@
 package linuxerr
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux/errno"
-	"gvisor.dev/gvisor/pkg/errors"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux/errno"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors"
 )
 
 var (

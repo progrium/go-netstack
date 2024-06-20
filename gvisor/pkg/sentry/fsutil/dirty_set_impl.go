@@ -1,12 +1,10 @@
 package fsutil
 
 import (
-	__generics_imported0 "gvisor.dev/gvisor/pkg/sentry/memmap"
-)
-
-import (
 	"bytes"
 	"fmt"
+
+	__generics_imported0 "github.com/progrium/go-netstack/gvisor/pkg/sentry/memmap"
 )
 
 // trackGaps is an optional parameter.

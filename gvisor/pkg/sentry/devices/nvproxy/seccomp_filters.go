@@ -15,10 +15,10 @@
 package nvproxy
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/nvgpu"
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
-	"gvisor.dev/gvisor/pkg/seccomp"
 )
 
 // Filters returns seccomp-bpf filters for this package.

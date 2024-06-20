@@ -15,8 +15,8 @@
 package ptrace
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/seccomp"
 )
 
 // SyscallFilters returns syscalls made exclusively by the ptrace platform.

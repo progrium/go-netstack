@@ -17,7 +17,7 @@ package metric
 import (
 	"fmt"
 
-	pb "gvisor.dev/gvisor/pkg/metric/metric_go_proto"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/metric/metric_go_proto"
 )
 
 // FakeUint64Metric is a type that implements all the methods of a Uint64Metric

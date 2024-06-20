@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
 )
 
 // getCoreTag returns the core tag of the tid. Only available on linux kernel >= 5.14.

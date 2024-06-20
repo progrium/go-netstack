@@ -7,9 +7,9 @@ import (
 	"io"
 	"net"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
 	"github.com/progrium/go-netstack/types"
 	log "github.com/sirupsen/logrus"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
 )
 
 func (n *VirtualNetwork) AcceptVpnKit(conn net.Conn) error {

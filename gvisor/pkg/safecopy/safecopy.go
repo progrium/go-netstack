@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/errors"
+	"github.com/progrium/go-netstack/gvisor/pkg/errors/linuxerr"
+	"github.com/progrium/go-netstack/gvisor/pkg/sighandling"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/errors"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sighandling"
 )
 
 // SegvError is returned when a safecopy function receives SIGSEGV.

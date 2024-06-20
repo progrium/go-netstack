@@ -21,8 +21,8 @@ import (
 	"io"
 	"math"
 
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/buffer"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 // IPv6ExtensionHeaderIdentifier is an IPv6 extension header identifier.

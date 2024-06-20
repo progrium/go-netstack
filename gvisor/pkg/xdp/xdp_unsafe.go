@@ -19,8 +19,8 @@ import (
 	"reflect"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
 )
 
 func registerUMEM(fd int, reg unix.XDPUmemReg) error {

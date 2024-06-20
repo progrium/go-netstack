@@ -19,13 +19,13 @@ package memevent
 import (
 	"time"
 
-	"gvisor.dev/gvisor/pkg/eventchannel"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/metric"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	pb "gvisor.dev/gvisor/pkg/sentry/kernel/memevent/memory_events_go_proto"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventchannel"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/metric"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/sentry/kernel/memevent/memory_events_go_proto"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/usage"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 var totalTicks = metric.MustCreateNewUint64Metric("/memory_events/ticks", false /*sync*/, "Total number of memory event periods that have elapsed since startup.")

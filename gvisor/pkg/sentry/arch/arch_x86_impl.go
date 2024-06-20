@@ -19,7 +19,7 @@
 package arch
 
 import (
-	"gvisor.dev/gvisor/pkg/sentry/arch/fpu"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch/fpu"
 )
 
 // State contains the common architecture bits for X86 (the build tag of this

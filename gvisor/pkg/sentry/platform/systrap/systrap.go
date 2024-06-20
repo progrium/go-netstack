@@ -53,16 +53,16 @@ import (
 	"os"
 	"sync"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	pkgcontext "gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/memutil"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sentry/platform/interrupt"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/usertrap"
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	pkgcontext "github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/memutil"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/pgalloc"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform/interrupt"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform/systrap/usertrap"
 )
 
 var (

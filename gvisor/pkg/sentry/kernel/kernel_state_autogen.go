@@ -3,9 +3,9 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/state"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/bpf"
+	"github.com/progrium/go-netstack/gvisor/pkg/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
 )
 
 func (c *Cgroup) StateTypeName() string {

@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/seccomp"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
 )
 
 const (

@@ -23,7 +23,7 @@ import (
 	"time"
 	"unicode"
 
-	pb "gvisor.dev/gvisor/pkg/metric/metric_go_proto"
+	pb "github.com/progrium/go-netstack/gvisor/pkg/metric/metric_go_proto"
 )
 
 const (

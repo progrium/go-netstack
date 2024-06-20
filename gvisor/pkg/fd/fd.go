@@ -21,8 +21,8 @@ import (
 	"os"
 	"runtime"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
 )
 
 // ReadWriter implements io.ReadWriter, io.ReaderAt, and io.WriterAt for fd. It

@@ -15,7 +15,7 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/sentry/inet"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/inet"
 )
 
 // IsNetworkNamespaced returns true if t is in a non-root network namespace.

@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/state"
-	"gvisor.dev/gvisor/pkg/state/wire"
+	"github.com/progrium/go-netstack/gvisor/pkg/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/state/wire"
 )
 
 type printer struct {

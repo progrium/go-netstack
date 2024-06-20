@@ -16,12 +16,12 @@ import (
 	"sync"
 
 	"github.com/inetaf/tcpproxy"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/adapters/gonet"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/network/ipv4"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/stack"
 	"github.com/progrium/go-netstack/types"
 	log "github.com/sirupsen/logrus"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
-	"gvisor.dev/gvisor/pkg/tcpip/network/ipv4"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
 )
 
 type PortsForwarder struct {

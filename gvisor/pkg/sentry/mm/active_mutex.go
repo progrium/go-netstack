@@ -3,8 +3,8 @@ package mm
 import (
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/sync/locking"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync/locking"
 )
 
 // RWMutex is sync.RWMutex with the correctness validator.

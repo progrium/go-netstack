@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"sort"
 
-	"gvisor.dev/gvisor/pkg/state/wire"
+	"github.com/progrium/go-netstack/gvisor/pkg/state/wire"
 )
 
 // objectEncodeState the type and identity of an object occupying a memory

@@ -15,8 +15,8 @@
 package p9
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/fd"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/fd"
 )
 
 // AttacherOptions contains Attacher configuration.

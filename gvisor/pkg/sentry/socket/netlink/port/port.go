@@ -25,7 +25,7 @@ import (
 	"math"
 	"math/rand"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // maxPorts is a sanity limit on the maximum number of ports to allocate per

@@ -17,8 +17,8 @@
 package unimpl
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 )
 
 // contextID is the events package's type for context.Context.Value keys.

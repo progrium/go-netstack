@@ -24,8 +24,8 @@ package kvm
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/arch"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
 )
 
 //go:linkname throw runtime.throw

@@ -18,8 +18,8 @@
 package xdp
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/atomicbitops"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
 )
 
 // The TXQueue is how a process tells the kernel which buffers are available to

@@ -22,13 +22,13 @@ import (
 	"reflect"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0"
+	"github.com/progrium/go-netstack/gvisor/pkg/ring0/pagetables"
+	"github.com/progrium/go-netstack/gvisor/pkg/sentry/platform"
+	ktime "github.com/progrium/go-netstack/gvisor/pkg/sentry/time"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/ring0"
-	"gvisor.dev/gvisor/pkg/ring0/pagetables"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	ktime "gvisor.dev/gvisor/pkg/sentry/time"
 )
 
 type kvmVcpuInit struct {

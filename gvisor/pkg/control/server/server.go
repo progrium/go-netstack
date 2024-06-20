@@ -26,11 +26,11 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/abi/linux"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/unet"
+	"github.com/progrium/go-netstack/gvisor/pkg/urpc"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/unet"
-	"gvisor.dev/gvisor/pkg/urpc"
 )
 
 // curUID is the unix user ID of the user that the control server is running as.

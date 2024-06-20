@@ -18,9 +18,9 @@ import (
 	"reflect"
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/hostarch"
+	"github.com/progrium/go-netstack/gvisor/pkg/safecopy"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/safecopy"
 )
 
 // stub is defined in arch-specific assembly.

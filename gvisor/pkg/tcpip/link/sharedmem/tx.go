@@ -17,10 +17,10 @@ package sharedmem
 import (
 	"math"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/buffer"
+	"github.com/progrium/go-netstack/gvisor/pkg/eventfd"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/link/sharedmem/queue"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/eventfd"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sharedmem/queue"
 )
 
 const (

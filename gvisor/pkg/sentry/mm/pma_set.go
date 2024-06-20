@@ -1,12 +1,10 @@
 package mm
 
 import (
-	__generics_imported0 "gvisor.dev/gvisor/pkg/hostarch"
-)
-
-import (
 	"bytes"
 	"fmt"
+
+	__generics_imported0 "github.com/progrium/go-netstack/gvisor/pkg/hostarch"
 )
 
 // trackGaps is an optional parameter.

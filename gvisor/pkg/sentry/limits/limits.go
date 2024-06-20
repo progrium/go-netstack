@@ -16,8 +16,8 @@
 package limits
 
 import (
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sync"
 )
 
 // LimitType defines a type of resource limit.

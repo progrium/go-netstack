@@ -19,8 +19,8 @@ import (
 	"os"
 	"path"
 
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/progrium/go-netstack/gvisor/pkg/fd"
+	"github.com/progrium/go-netstack/gvisor/pkg/sync"
 )
 
 // PointX represents the checkpoint X.

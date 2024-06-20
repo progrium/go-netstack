@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/gohacks"
+	"github.com/progrium/go-netstack/gvisor/pkg/gohacks"
 )
 
 // An AddrRangeSeq represents a sequence of AddrRanges.

@@ -17,8 +17,8 @@ package time
 import (
 	"errors"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/log"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
 )
 
 const (

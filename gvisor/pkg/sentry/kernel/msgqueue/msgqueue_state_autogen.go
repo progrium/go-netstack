@@ -3,7 +3,7 @@
 package msgqueue
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/progrium/go-netstack/gvisor/pkg/state"
 )
 
 func (l *msgList) StateTypeName() string {

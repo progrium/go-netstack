@@ -20,8 +20,8 @@ package fsutil
 import (
 	"unsafe"
 
+	"github.com/progrium/go-netstack/gvisor/pkg/syserr"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/syserr"
 )
 
 // StatAt is a convenience wrapper around newfstatat(2).

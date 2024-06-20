@@ -18,8 +18,8 @@ package hash
 import (
 	"encoding/binary"
 
-	"gvisor.dev/gvisor/pkg/rand"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
+	"github.com/progrium/go-netstack/gvisor/pkg/rand"
+	"github.com/progrium/go-netstack/gvisor/pkg/tcpip/header"
 )
 
 var hashIV = RandN32(1)[0]

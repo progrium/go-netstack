@@ -17,7 +17,7 @@ package mm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/progrium/go-netstack/gvisor/pkg/context"
 )
 
 // InvalidateUnsavable invokes memmap.Mappable.InvalidateUnsavable on all
