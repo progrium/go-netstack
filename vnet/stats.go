@@ -1,4 +1,4 @@
-package virtualnetwork
+package vnet
 
 import (
 	"reflect"

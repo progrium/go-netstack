@@ -1,4 +1,4 @@
-package virtualnetwork
+package vnet
 
 import (
 	"math"
@@ -19,6 +19,8 @@ import (
 	"github.com/progrium/go-netstack/types"
 )
 
+type Configuration = types.Configuration
+
 type VirtualNetwork struct {
 	configuration *types.Configuration
 	stack         *stack.Stack
@@ -28,6 +30,8 @@ type VirtualNetwork struct {
 }
 
 func New(configuration *types.Configuration) (*VirtualNetwork, error) {
+	configuration.Protocol = types.QemuProtocol
+
 	_, subnet, err := net.ParseCIDR(configuration.Subnet)
 	if err != nil {
 		return nil, errors.Wrap(err, "cannot parse subnet cidr")

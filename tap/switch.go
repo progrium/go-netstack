@@ -79,10 +79,10 @@ func (e *Switch) DeliverNetworkPacket(_ tcpip.NetworkProtocolNumber, pkt stack.P
 
 func (e *Switch) Accept(ctx context.Context, rawConn net.Conn, protocol types.Protocol) error {
 	conn := protocolConn{Conn: rawConn, protocolImpl: protocolImplementation(protocol)}
-	log.Infof("new connection from %s to %s", conn.RemoteAddr().String(), conn.LocalAddr().String())
+	// log.Infof("new connection from %s to %s", conn.RemoteAddr().String(), conn.LocalAddr().String())
 	id, failed := e.connect(conn)
 	if failed {
-		log.Error("connection failed")
+		// log.Error("connection failed")
 		return conn.Close()
 
 	}
@@ -93,7 +93,7 @@ func (e *Switch) Accept(ctx context.Context, rawConn net.Conn, protocol types.Pr
 		e.disconnect(id, conn)
 	}()
 	if err := e.rx(ctx, id, conn); err != nil {
-		log.Error(errors.Wrapf(err, "cannot receive packets from %s, disconnecting", conn.RemoteAddr().String()))
+		// log.Error(errors.Wrapf(err, "cannot receive packets from %s, disconnecting", conn.RemoteAddr().String()))
 		return err
 	}
 	return nil
