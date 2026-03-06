@@ -45,6 +45,8 @@ type Switch struct {
 
 	writeLock sync.Mutex
 
+	bufPool sync.Pool // []byte for copying packet under lock before releasing
+
 	gateway VirtualDevice
 }
 
@@ -114,17 +116,40 @@ func (e *Switch) tx(pkt stack.PacketBufferPtr) error {
 	return e.txPkt(pkt)
 }
 
+func (e *Switch) getBuf(size int) []byte {
+	if v := e.bufPool.Get(); v != nil {
+		b := v.([]byte)
+		if cap(b) >= size {
+			return b[:size]
+		}
+	}
+	return make([]byte, size)
+}
+
+func (e *Switch) putBuf(b []byte) {
+	if b != nil {
+		e.bufPool.Put(b[:cap(b)])
+	}
+}
+
+// txPkt copies the packet under lock, resolves targets, then releases locks
+// and performs I/O so a slow or stalled client does not block others.
 func (e *Switch) txPkt(pkt stack.PacketBufferPtr) error {
+	size := pkt.Size()
 	e.writeLock.Lock()
-	defer e.writeLock.Unlock()
-
 	e.connLock.Lock()
-	defer e.connLock.Unlock()
 
-	buf := pkt.ToView().AsSlice()
+	buf := e.getBuf(size)
+	off := 0
+	for _, s := range pkt.AsSlices() {
+		off += copy(buf[off:], s)
+	}
 	eth := header.Ethernet(buf)
 	dst := eth.DestinationAddress()
 	src := eth.SourceAddress()
+
+	var targets []protocolConn
+	var targetIDs []int
 
 	if dst == header.EthernetBroadcastAddress {
 		e.camLock.RLock()
@@ -137,29 +162,39 @@ func (e *Switch) txPkt(pkt stack.PacketBufferPtr) error {
 			if id == srcID {
 				continue
 			}
-
-			err := e.txBuf(id, conn, buf)
-			if err != nil {
-				return err
-			}
-
-			atomic.AddUint64(&e.Sent, uint64(pkt.Size()))
+			targets = append(targets, conn)
+			targetIDs = append(targetIDs, id)
 		}
 	} else {
 		e.camLock.RLock()
 		id, ok := e.cam[dst]
 		if !ok {
 			e.camLock.RUnlock()
+			e.connLock.Unlock()
+			e.writeLock.Unlock()
+			e.putBuf(buf)
 			return nil
 		}
 		e.camLock.RUnlock()
-		conn := e.conns[id]
-		err := e.txBuf(id, conn, buf)
+		targets = append(targets, e.conns[id])
+		targetIDs = append(targetIDs, id)
+	}
+
+	e.connLock.Unlock()
+	e.writeLock.Unlock()
+
+	for i, conn := range targets {
+		err := e.txBuf(targetIDs[i], conn, buf[:size])
 		if err != nil {
+			e.connLock.Lock()
+			e.disconnect(targetIDs[i], conn)
+			e.connLock.Unlock()
+			e.putBuf(buf)
 			return err
 		}
-		atomic.AddUint64(&e.Sent, uint64(pkt.Size()))
+		atomic.AddUint64(&e.Sent, uint64(size))
 	}
+	e.putBuf(buf)
 	return nil
 }
 
